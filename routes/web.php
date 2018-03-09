@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('citizen::list');
 });
 
-Route::group(['as' => 'citizen::', 'prefix' => 'citizen'], function () {
+Route::group(['as' => 'citizen::', 'prefix' => 'citizens'], function () {
     Route::get('/', 'CitizenController@list')->name('list');
     Route::get('create', 'CitizenController@create')->name('create');
     Route::post('create', 'CitizenController@create')->name('insert');

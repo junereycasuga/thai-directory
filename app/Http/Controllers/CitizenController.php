@@ -29,7 +29,7 @@ class CitizenController extends Controller
     {
         $citizens = $this->citizenRepository->paginate(10);
 
-        return view('citizen/index', compact($citizens));
+        return view('citizen/index', compact('citizens'));
     }
 
     /**
@@ -55,6 +55,6 @@ class CitizenController extends Controller
     {
         $citizen = $this->citizenRepository->findById($id);
 
-        return view('citizen/details', compact($citizen));
+        return view('citizen/details', compact('citizen'));
     }
 }
