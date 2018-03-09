@@ -34,6 +34,7 @@
         </div>
         <div class="form-group row">
             @csrf
+            <a href="{{ route('citizen::list') }}" class="btn btn-light">Back</a>
             <input type="submit" value="Save" class="btn btn-primary">
         </div>
     </form>

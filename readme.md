@@ -22,3 +22,9 @@ Install dependencies and compile assets
 yarn install && composer install
 npm run dev
 ```
+
+Run migrations and seeders
+```
+php artisan migrate
+php artisan db:seed
+```
