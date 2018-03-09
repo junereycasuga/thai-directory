@@ -1,6 +1,6 @@
 ## Thai Directory
 
-###Setting up the project
+### Setting up the project
 Clone this repo.
 
 Make sure you have docker installed and run the following commands.
