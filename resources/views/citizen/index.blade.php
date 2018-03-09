@@ -2,7 +2,12 @@
 @section('content')
     <div class="row">
         <div class="col-md-6"><h3>Citizens</h3></div>
-        <div class="col-md-6">
+        <div class="col-md-5">
+            <form method="GET" class="float-right">
+                <input type="text" name="searchString" placeholder="Search" class="form-control">
+            </form>
+        </div>
+        <div class="col-md-1">
             <a href="{{ route('citizen::create') }}" class="btn btn-primary float-right">Create</a>
         </div>
     </div>
